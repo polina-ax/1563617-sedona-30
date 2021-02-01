@@ -1,0 +1,196 @@
+
+:root {
+	--basic-white: #FFFFFF;
+	--basic-grey: #EEEEEE;
+	--basic-blue: #81B3D2;
+	--basic-brown: #766357;
+	--basic-dark: #333333;
+	--basic-black: #000000;
+	--basic-red: #FF0000;
+
+	--special-blue: #669EC0;
+	--special-dark-blue: #5496BD;
+	--special-light-grey: #F2F2F2;
+	--special-middle-grey: #EBEBEB;
+}
+
+body {
+	min-width: 960px;
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
+	color: var(--basic-dark);
+	text-transform: uppercase;
+	background-color: var(--basic-grey);
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	text-align: center;
+}
+
+.slogan {
+	font-size: 21px;
+	line-height: 26px;
+	color: var(--basic-black);
+}
+
+.main-navigation {
+	font-size: 14px;
+	line-height: 26px;
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+	background-color: var(--basic-white);
+}
+
+.site-navigation a {
+	color: var(--basic-black);
+}
+
+.site-navigation a :hover{
+	color: var(--basic-blue);
+}
+
+.site-navigation a:focus{
+	color: var(--basic-red);
+}
+
+.information-list {
+	list-style: none;
+}
+
+.information-item {
+	text-align: center;
+	background-color: var(--basic-blue);
+	color: var(--basic-white);
+}
+
+.informatiom-item h3 {
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.lifehack-list {
+	list-style: none;
+	background-color: var(--basic-grey);
+	color: var(--basic-dark);
+}
+
+
+.lifehack-item h3 {
+	color: var(--basic-black);
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.features-list {
+	list-style: none;
+}
+
+.features-item {
+	text-align: center;
+}
+
+.features-item h3 {
+	color: var(--basic-black);
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.search {
+	text-align: center;
+}
+
+.search h2 {
+	color: var(--basic-black);
+	font-size: 30px;
+	line-height: 24px;
+}
+
+.search h3 {
+	color: var(--basic-white);
+	background-color: var(--basic-brown);
+}
+
+.calendar {
+	background-color: var(--basic-white);
+}
+
+.calendar-item input {
+	font: inherit;
+	color: var(--basic-black);
+	background-color: var(--special-light-grey);
+	border: none;
+}
+
+.calendar-item input:hover {
+	background-color: var(--special-middle-grey);
+}
+
+.calendar-item input:focus {
+	background-color: var(--basic-white);
+	border: 2px solid var(--special-middle-grey);
+}
+
+.button {
+	font: inherit;
+	text-align: center;
+	color: var(--basic-white);
+	vertical-align: middle;
+	text-transform: uppercase;
+	background-color: var(--basic-blue);
+	border: none;
+}
+
+.button:hover {
+	background-color: var(--special-blue);
+}
+
+.button:active {
+	background-color: var(--special-dark-blue);
+}
+
+.main-footer {
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+}
+
+.footer-contacts a{
+	color: var(--basic-black);
+	text-decoration: none;
+}
+
+.footer-social ul {
+	list-style: none;
+}
+
+.social-button {
+	color: var(--basic-white);
+	background-color: var(--basic-blue);
+}
+
+.social-button:hover {
+	background-color: var(--special-blue);
+}
+
+.social-button:focus {
+	background-color: var(--special-dark-blue);
+}
