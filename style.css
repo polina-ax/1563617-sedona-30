@@ -12,6 +12,8 @@
 	--special-dark-blue: #5496BD;
 	--special-light-grey: #F2F2F2;
 	--special-middle-grey: #EBEBEB;
+	--special-brown: #666666;
+	--special-grey: #E5E5E5;
 }
 
 body {
@@ -166,6 +168,120 @@ img {
 
 .button:active {
 	background-color: var(--special-dark-blue);
+}
+
+.inner-page {
+	color: var(--basic-dark);
+	background-color: var(--basic-grey);
+}
+
+.filter {
+	color: var(--basic-white);
+	text-align: left; 
+}
+
+.filter-item legend {
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.filter-item ul {
+	list-style: none;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.filter button {
+	text-align: center;
+	color: var(--basic-white);
+	vertical-align: middle;
+	text-transform: uppercase;
+	border: 2px;
+}
+
+.filter button:hover {
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+}
+
+.choose {
+	background-color: var(--basic-white);
+	text-align: left;
+}
+
+.result {
+	color: var(--basic-black);
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.sorting {
+	color: var(--basic-black);
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.sorting-list {
+	list-style: none;
+	text-align: left;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.sorting-item {
+	color: var(--basic-blue);
+}
+
+.sorting-item a {
+	color: var(--basic-grey);
+	border-bottom: 1px dashed;
+}
+
+.sorting-item a:hover {
+	color: var(--basic-blue);
+	border-bottom: 1px dashed;
+}
+
+.sorting-item a:focus{
+	color: var(--basic-black);
+}
+
+.hotels {
+	background-color: var(--basic-white);
+}
+
+.hotels-list {
+	list-style: none;
+	text-align: left;
+}
+
+.hotels-item h3 {
+	color: var(--basic-black);
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.hotels-item h3:hold {
+	color: var(--basic-blue);
+}
+
+.hotels-item h3:focus {
+	color: var(--basic-grey);
+}
+
+.details {
+	color: var(--basic-white);
+	background-color: var(--basic-blue);
+}
+
+.booking {
+	color: var(--basic-white);
+	background-color: var(--basic-brown);
+}
+
+.rating {
+	color: var(--special-brown);
+	background-color: var(--special-grey);
 }
 
 .main-footer {
