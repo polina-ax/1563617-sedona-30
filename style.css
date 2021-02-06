@@ -209,13 +209,14 @@ img {
 	text-align: left;
 }
 
-.result {
+.choose-title {
 	color: var(--basic-black);
 	font-size: 21px;
 	line-height: 26px;
 }
 
-.sorting {
+.sorting-hotel {
+	background-color: var(--basic-white);
 	color: var(--basic-black);
 	font-size: 12px;
 	line-height: 18px;
@@ -250,6 +251,10 @@ img {
 	background-color: var(--basic-white);
 }
 
+.hotels-title {
+	text-align: left;
+}
+
 .hotels-list {
 	list-style: none;
 	text-align: left;
@@ -269,12 +274,12 @@ img {
 	color: var(--basic-grey);
 }
 
-.details {
+.details-link {
 	color: var(--basic-white);
 	background-color: var(--basic-blue);
 }
 
-.booking {
+.booking-link {
 	color: var(--basic-white);
 	background-color: var(--basic-brown);
 }
