@@ -27,6 +27,11 @@ body {
 	color: var(--basic-dark);
 	text-transform: uppercase;
 	background-color: var(--basic-grey);
+
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+	align-content: start;
 }
 
 a {
@@ -36,6 +41,10 @@ a {
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+.page {
+	height: 100%;
 }
 
 .container {
@@ -49,13 +58,28 @@ img {
 }
 
 .main-navigation {
+	display: grid;
 	font-size: 14px;
 	line-height: 26px;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
 }
 
+.main-header-logo {
+	justify-self: center;
+}
+
+.main-navigation {
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
 .site-navigation {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -75,8 +99,29 @@ img {
 	color: var(--basic-red);
 }
 
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
 .information-list {
 	list-style: none;
+}
+
+.sedona-1 {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.sedona-2 {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+.text {
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .information-item {
@@ -91,11 +136,21 @@ img {
 }
 
 .lifehack-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 124px;
+	margin: 0;
+	padding: 0;
+	margin-top: 60px;
+	margin-bottom: 82px;
 	list-style: none;
 	background-color: var(--basic-grey);
 	color: var(--basic-dark);
 }
 
+.lifehack-item p {
+	margin: 0 10px;
+}
 
 .lifehack-item h3 {
 	color: var(--basic-black);
@@ -104,6 +159,13 @@ img {
 }
 
 .features-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 168px;
+	margin: 0;
+	padding: 0;
+	margin-top: 47px;
+	margin-bottom: 54px;
 	list-style: none;
 }
 
@@ -290,8 +352,15 @@ img {
 }
 
 .main-footer {
+	padding: 23px 73px;
+	margin-top: 23px;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
+}
+
+.main-footer .container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer-contacts a{
