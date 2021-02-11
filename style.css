@@ -242,6 +242,12 @@ img {
 	text-align: left; 
 }
 
+.filter-box {
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr;
+	align-content: start;
+}
+
 .filter-item legend {
 	font-size: 16px;
 	line-height: 21px;
@@ -284,7 +290,22 @@ img {
 	line-height: 18px;
 }
 
+.sorting-hotel-title {
+	padding: 0;
+	margin: 0; 
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.search-results {
+	display: grid;
+	grid-column: 1 / -1;
+	margin-bottom: 30px;
+}
+
 .sorting-list {
+	padding: 0;
+	margin: 0;
 	list-style: none;
 	text-align: left;
 	font-size: 12px;
@@ -320,6 +341,14 @@ img {
 .hotels-list {
 	list-style: none;
 	text-align: left;
+}
+
+.hotels-item {
+	display: grid;
+	grid-template-columns: 1fr 2fr 3fr;
+	padding: 0;
+	margin-bottom: 30px;
+	margin-top: 23px;
 }
 
 .hotels-item h3 {
