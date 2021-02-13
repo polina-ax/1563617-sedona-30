@@ -109,22 +109,14 @@ img {
 	list-style: none;
 }
 
-.sedona-1 {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-}
-
-.sedona-2 {
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-}
-
-.text {
+.information-item-text {
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
 
 .information-item {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
 	text-align: center;
 	background-color: var(--basic-blue);
 	color: var(--basic-white);
@@ -133,6 +125,11 @@ img {
 .informatiom-item h3 {
 	font-size: 21px;
 	line-height: 21px;
+}
+
+.information-item:nth-child(1) {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
 }
 
 .lifehack-list {
