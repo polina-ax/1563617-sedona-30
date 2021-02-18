@@ -70,8 +70,8 @@ img {
 }
 
 .main-navigation {
-	display: grid;
-	grid-template-columns: 1fr;
+	display: flex;
+	justify-content: space-around;
 	width: 1200px;
 	margin: 0 auto;
 	padding: 0 10px;
@@ -79,7 +79,7 @@ img {
 
 .site-navigation {
 	margin: 0;
-	padding: 0;
+	padding: 0 72px;
 	list-style: none;
 }
 
@@ -110,16 +110,16 @@ img {
 }
 
 .information-item-text {
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-
-.information-item {
-	display: grid;
-	grid-template-columns: 2fr 1fr;
+	width: 400px;
 	text-align: center;
 	background-color: var(--basic-blue);
 	color: var(--basic-white);
+}
+
+.information-item {
+	display: flex;
+	flex-direction: row;
+	height: 256px;
 }
 
 .informatiom-item h3 {
@@ -127,10 +127,6 @@ img {
 	line-height: 21px;
 }
 
-.information-item:nth-child(1) {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-}
 
 .lifehack-list {
 	display: grid;
