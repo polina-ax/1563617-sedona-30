@@ -6,7 +6,6 @@
 	--basic-brown: #766357;
 	--basic-dark: #333333;
 	--basic-black: #000000;
-	--basic-red: #FF0000;
 
 	--special-blue: #669EC0;
 	--special-dark-blue: #5496BD;
@@ -138,7 +137,7 @@ img {
 }
 
 .site-navigation a:focus{
-	color: var(--basic-red);
+	color: var(--basic-grey);
 }
 
 .sedona-banner {
@@ -147,17 +146,19 @@ img {
 }
 
 .mountains {
-	position: relative;
-	left: 0px;
+	position: absolute;
+	left: 75px;
 	width: 1200px;
+	z-index: 5;
 	margin-bottom: 0px;
+	background-color: var(--basic-blue);
 }
 
 .mountains:before {
 	content: "";
 	background-image: url(img/welcome.svg);
 	background-color: var(--basic-white);
-	position: absolute;
+	position: relative;
 	width: 456px;
 	height: 350px;
 	top: 132px;
@@ -168,11 +169,11 @@ img {
 	background-position: 0 0;
 }
 
-.slogan-block::before {
+.mountains::after {
 	content: "";
-	background-image: url(img/Shape.svg);
+	background-image: url(img/shape.svg);
 	background-color: var(--basic-white);
-	position: absolute;
+	position: relative;
 	z-index: 10;
 	top: 509px;
 	left: 73px;
@@ -247,7 +248,7 @@ img {
 .features-list {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	column-gap: 120px;
+	column-gap: 114px;
 	margin-top: 47px;
 	margin-bottom: 54px;
 	margin-right: 77px;
@@ -260,6 +261,7 @@ img {
 }
 
 .features-item h3 {
+	padding: 0 80px;
 	color: var(--basic-black);
 	font-size: 21px;
 	line-height: 21px;
@@ -272,25 +274,33 @@ img {
 }
 
 .search h2 {
-	margin: 0 350px;
+	margin: 0;
 	color: var(--basic-black);
 	font-size: 30px;
 	line-height: 24px;
 }
 
 .search-info {
-	margin: 24px 300px;
+	margin: 0;
+	padding: 24px;
 }
 
 .search h3 {
 	padding: 30px 125px;
-	width: 268px;
+	width: 318px;
 	margin-bottom: 0;
 	color: var(--basic-white);
 	background-color: var(--basic-brown);
 }
 
+.search-form {
+	position: absolute;
+	left: 75px;
+	background-color: var(--basic-white);
+}
+
 .calendar {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	margin: 0 316px;
@@ -299,7 +309,6 @@ img {
 }
 
 .calendar-form {
-	position: absolute;
 	top: 2185px;
 	z-index: 10;
 	padding: 55px;
@@ -410,7 +419,7 @@ img {
 	position: relative;
 	width: 1199px;
 	height: 594px;
-	top: -60px;
+	top: 42px;
 } 
 
 .geo iframe {
@@ -426,6 +435,7 @@ img {
 
 .filter {
 	background-image: url(img/background.jpg);
+	background-color: var(--basic-brown);
 	width: 1200px;
 	height: 217px;
 	color: var(--basic-white);
@@ -509,6 +519,7 @@ img {
 
 .price-controls {
 	display: flex;
+	position: relative;
 	justify-content: space-around;
 	width: 317px;
 	height: 36px;
@@ -536,9 +547,9 @@ img {
 .min-price::after {
 	content: "";
 	position: absolute;
-	top: 122px;
-	left: 1043px;
-	width: 2px;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
 	height: 22px;
 	background-color: var(--basic-white);
 	background-repeat: no-repeat;
@@ -757,6 +768,7 @@ img {
 .main-footer {
 	padding: 23px 73px;
 	margin-top: 0px;
+	z-index: 10;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
 }
