@@ -20,26 +20,36 @@
     		</a>
     		<div class="container">
     		<nav class="main-navigation">
-    		<ul class="site-navigation clear-list">
-    			<li class="navigation-item"><a href="blank.html">Информация</a></li>
-    			<li class="navigation-item"><a href="blank.html">Фото и видео</a></li>
-    			<li class="navigation-item"><a href="blank.html">Карта штата</a></li>
-    			<li class="navigation-item"><a href="catalog.html">Гостиницы</a></li>
-    		</ul>
+    		<table class="site-navigation navigation-left">
+                <tbody>
+                <tr>
+                <td class="navigation-item"><a href="blank.html">Информация</a></td>
+    			<td class="navigation-item"><a href="blank.html">Фото и видео</a></td>
+            </tr>
+            </tbody>
+            </table>
+            <table class="site-navigation navigation-right">
+                <tbody>
+                <tr>
+    			<td class="navigation-item"><a href="blank.html">Карта штата</a></td>
+    			<td class="navigation-item"><a href="catalog.html">Гостиницы</a></td>
+            </tr>
+            </table>
     	</nav>
     </div>
     </header>
 
     <main class="container">
     	<h1 class="welcome-sedona visually-hidden">Добро пожаловать в Седону!</h1>
-    	<div class="container sedona-banner">
+    	<div class="sedona-banner">
     	<img class="mountains" src="img/background-photo.jpg" width="1200" height="509" alt="Горы Седоны">
+        <img class="welcome-banner" src="img/welcome.svg" width="457" height="350" alt="Добро пожаловать!">
     </div>
     	<section class="information">
     		<h2 class="sedona-information visually-hidden">Информация о Седоне</h2>
     		<div class="slogan-block">
     		<p class="slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-    		<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    		<p class="five-reasons-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     	</div>
     		<ul class="information-list clear-list">
     			<li class="information-item">
@@ -54,18 +64,15 @@
     			</li>
     			<li>
     				<ul class="lifehack-list clear-list">
-    			<li class="lifehack-item">
-    				<img src="img/icon-house.svg" width="75" height="72" alt="Жилье">
+    			<li class="lifehack-item house">
     				<h3 class="lifehack-title">Жильё</h3>
     				<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
     			</li>
-    			<li class="lifehack-item">
-    				<img src="img/icon-burger.svg" width="75" height="72" alt="Еда">
+    			<li class="lifehack-item burger">
     				<h3 class="lifehack-title">Еда</h3>
     				<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
     			</li>
-    			<li class="lifehack-item">
-    				<img src="img/icon-present.svg" width="64" height="77" alt="Сувениры">
+    			<li class="lifehack-item present">
     				<h3 class="lifehack-title">Сувениры</h3>
     				<p>Не только китайского, но и местного производства!</p>
     			</li>
@@ -108,27 +115,36 @@
     		<p class="search-info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <div class="search-form">
     		<section class="calendar">
-    		<h3 class="search-hostel">Поиск гостиницы в Седоне</h3>
+            <h3 class="visually-hidden">Поиск гостиниц</h3>
+    		<button class="search-hostel" type="button">Поиск гостиницы в Седоне</button>
     		<form class="calendar-form" action="https://echo.htmlacademy.ru" method="post">
       	<div class="calendar-item wrapper-input">
-        <label for="calendar-date-in">Дата заезда</label>
+        <label for="calendar-date-in">Дата заезда:</label>
         <input id="calendar-date-in" type="text" name="date" placeholder="24 апреля 2017"> 
     </div>
       	<div class="calendar-item wrapper-input">
-        <label for="calendar-date-out">Дата выезда</label>
+        <label for="calendar-date-out">Дата выезда:</label>
         <input id="calendar-date-out" type="text" name="time" placeholder="4 июля 2017">
     </div>
     <div class="calendar-item">
-      <p class="calendar-age">
-        <label for="calendar-adult">Взрослые</label>
+      <table class="calendar-age">
+        <tbody>
+            <tr>
+        <td class="table-adult">
+        <label class="calendar-adult" for="calendar-adult">Взрослые:</label>
         <span class="wrapper-age">
         <input id="calendar-adult" type="number" min="0" max="10" value="2">
     </span>
-        <label for="calendar-children">Дети</label>
+</td>
+    <td class="table-children">
+        <label class="calendar-children" for="calendar-children">Дети:</label>
         <span class="wrapper-age">
         <input id="calendar-children" type="number" min="0" max="10" value="0">
     </span>
-      </p>
+</td>
+</tr>
+</tbody>
+      </table>
   </div>
       <button class="button" type="submit">Найти</button>
     </form>
@@ -146,7 +162,9 @@
     	<section class="footer-contacts">
     		<h2 class="visually-hidden">Контакты</h2>
     		<p>
-    			<a class="footer-hashtag" href="#visitSEDONA">#visitSEDONA</a><br>
+    			<a class="footer-hashtag" href="#visitSEDONA">#visitSEDONA</a>
+            </p>
+            <p>
     			ТЕЛ:<a class="footer-phone" href="+7(495)666-01-66"> +7(495) 666-01-66</a>
     		</p>
     	</section>

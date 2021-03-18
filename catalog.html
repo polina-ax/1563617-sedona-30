@@ -21,12 +21,22 @@
             </a>
             <div class="container">
             <nav class="main-navigation">
-            <ul class="site-navigation clear-list">
-                <li class="navigation-item"><a href="blank.html">Информация</a></li>
-                <li class="navigation-item"><a href="blank.html">Фото и видео</a></li>
-                <li class="navigation-item"><a href="blank.html">Карта штата</a></li>
-                <li class="navigation-item"><a href="catalog.html">Гостиницы</a></li>
-            </ul>
+            <table class="site-navigation navigation-left">
+                <tbody>
+                    <tr>
+                <td class="navigation-item"><a href="blank.html">Информация</a></td>
+                <td class="navigation-item"><a href="blank.html">Фото и видео</a></td>
+            </tr>
+            </tbody>
+            </table>
+            <table class="site-navigation navigation-right">
+                <tbody>
+                    <tr>
+                <td class="navigation-item"><a href="blank.html">Карта штата</a></td>
+                <td class="navigation-item"><a href="catalog.html">Гостиницы</a></td>
+            </tr>
+            </tbody>
+            </table>
         </nav>
     </div>
     </header>
@@ -77,10 +87,12 @@
     					<div>
     						<div class="price-controls">
                               <label class="min-price">
-                                  От <input type="number" name="min-price" value="0"> 
+                                  <span class="price-borders">От</span> 
+                                  <input type="number" name="min-price" value="0"> 
                               </label>
                               <label>
-                                  До <input type="number" name="max-price" value="3000">
+                                  <span class="price-borders">До</span>
+                                  <input type="number" name="max-price" value="3000">
                               </label>  
                             </div>
     						<div class="range-controls">
@@ -111,7 +123,7 @@
     		</ul>
     	</div>
         <div class="triangles">
-            <input type="image" src="img/triangle-up.svg" alt="Вверх">
+            <input class="triangle-up" type="image" src="img/triangle-up.svg" alt="Вверх">
             <input type="image" src="img/triangle-down.svg" alt="Вниз">
         </div>
     </div>
@@ -121,20 +133,26 @@
     				<img src="img/amara-resort-spa.jpg" width="135" height="90" alt="Amara Resort & Spa - гостиница у скал" class="hotel-image">
     				<div class="hotel-description">
     				<h3>Amara Resort & Spa</h3>
-    				<p>
-    				<span>Гостиница</span>
-    				<span>От 4000 р.</span>
-    			</p>
-    			<p>
-    				<a href="blank.html" class="details-link">Подробнее</a>
+                    <table>
+    				<tr class="type-price">
+    				<td>Гостиница</td>
+    				<td>От 4000 р.</td>
+    			</tr>
+    			<tr class="hotel-buttons">
+    				<td>
+                        <a href="blank.html" class="details-link">Подробнее</a>
+                    </td>
+                    <td>
     				<a href="blank.html" class="booking-link">Забронировать</a>
-    			</p>
+                </td>
+    			</tr>
+            </table>
     		</div>
             <div class="stars">
-            <img src="img/star.svg" width="18" height="17" alt="Звезда">
-            <img src="img/star.svg" width="18" height="17" alt="Звезда">
-            <img src="img/star.svg" width="18" height="17" alt="Звезда">
-            <img src="img/star.svg" width="18" height="17" alt="Звезда">
+            <img src="img/star.svg" class="star" width="18" height="17" alt="Звезда">
+            <img src="img/star.svg" class="star" width="18" height="17" alt="Звезда">
+            <img src="img/star.svg" class="star" width="18" height="17" alt="Звезда">
+            <img src="img/star.svg" class="star" width="18" height="17" alt="Звезда">
         </div>
     			<p class="rating">Рейтинг: 8,5</p>
     			</li>
@@ -142,19 +160,25 @@
     				<img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Desert Quail Inn - придорожный мотель" class="hotel-image">
     				<div class="hotel-description">
     				<h3>Desert Quail Inn</h3>
-    				<p>
-    				<span>Мотель</span>
-    				<span>От 3000 р.</span>
-    			</p>
-    			<p>
-    				<a href="blank.html" class="details-link">Подробнее</a>
-    				<a href="blank.html" class="booking-link">Забронировать</a>
-    			</p>
+    				<table>
+                    <tr class="type-price">
+                    <td>Мотель</td>
+                    <td>От 3000 р.</td>
+                </tr>
+                <tr class="hotel-buttons">
+                    <td>
+                        <a href="blank.html" class="details-link">Подробнее</a>
+                    </td>
+                    <td>
+                    <a href="blank.html" class="booking-link">Забронировать</a>
+                </td>
+                </tr>
+            </table>
     		</div>
             <div class="stars">
-            <img src="img/star.svg" width="18" height="17" alt="Звезда">
-            <img src="img/star.svg" width="18" height="17" alt="Звезда">
-            <img src="img/star.svg" width="18" height="17" alt="Звезда">
+            <img src="img/star.svg" class="star" width="18" height="17" alt="Звезда">
+            <img src="img/star.svg" class="star" width="18" height="17" alt="Звезда">
+            <img src="img/star.svg" class="star" width="18" height="17" alt="Звезда">
         </div>
     			<p class="rating">Рейтинг: 8,9</p>
     			</li>
@@ -162,18 +186,24 @@
     				<img src="img/diablo-poco.jpg" width="135" height="90" alt="Villas at Poco Diablo - живописные апартаменты" class="hotel-image">
     				<div class="hotel-description">
     				<h3>Villas at Poco Diablo</h3>
-    				<p>
-    				<span>Апартаменты</span>
-    				<span>От 2000 Р.</span>
-    			</p>
-    			<p>
-    				<a href="blank.html" class="details-link">Подробнее</a>
-    				<a href="blank.html" class="booking-link">Забронировать</a>
-    			</p>
+    				<table>
+                    <tr class="type-price">
+                    <td>Апартаменты</td>
+                    <td>От 2000 р.</td>
+                </tr>
+                <tr class="hotel-buttons">
+                    <td>
+                        <a href="blank.html" class="details-link">Подробнее</a>
+                    </td>
+                    <td>
+                    <a href="blank.html" class="booking-link">Забронировать</a>
+                </td>
+                </tr>
+            </table>
     		</div>
             <div class="stars">
-            <img src="img/star.svg" width="18" height="17" alt="Звезда">
-            <img src="img/star.svg" width="18" height="17" alt="Звезда">
+            <img src="img/star.svg" class="star" width="18" height="17" alt="Звезда">
+            <img src="img/star.svg" class="star" width="18" height="17" alt="Звезда">
         </div>
     			<p class="rating">Рейтинг: 9,2</p>
     			</li>
@@ -187,7 +217,9 @@
         <section class="footer-contacts">
             <h2 class="visually-hidden">Контакты</h2>
             <p>
-                <a class="footer-hashtag" href="#visitSEDONA">#visitSEDONA</a><br>
+                <a class="footer-hashtag" href="#visitSEDONA">#visitSEDONA</a>
+            </p>
+            <p>
                 ТЕЛ:<a class="footer-phone" href="+7(495)666-01-66"> +7(495) 666-01-66</a>
             </p>
         </section>
