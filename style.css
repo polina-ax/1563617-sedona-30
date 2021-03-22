@@ -151,7 +151,7 @@ img {
 }
 
 .sedona-banner::after {
-	content: url("img/shape.svg");
+	content: url("img/corner.svg");
 	position: absolute;
 	z-index: 10;
 	bottom: -7px;
