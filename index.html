@@ -20,21 +20,12 @@
     		</a>
     		<div class="container">
     		<nav class="main-navigation">
-    		<table class="site-navigation navigation-left">
-                <tbody>
-                <tr>
-                <td class="navigation-item"><a href="blank.html">Информация</a></td>
-    			<td class="navigation-item"><a href="blank.html">Фото и видео</a></td>
-            </tr>
-            </tbody>
-            </table>
-            <table class="site-navigation navigation-right">
-                <tbody>
-                <tr>
-    			<td class="navigation-item"><a href="blank.html">Карта штата</a></td>
-    			<td class="navigation-item"><a href="catalog.html">Гостиницы</a></td>
-            </tr>
-            </table>
+    		<ul class="site-navigation clear-list">
+                <li class="navigation-item"><a href="blank.html">Информация</a></li>
+                <li class="navigation-item"><a href="blank.html">Фото и видео</a></li>
+                <li class="navigation-item"><a href="blank.html">Карта штата</a></li>
+                <li class="navigation-item"><a href="catalog.html">Гостиницы</a></li>
+            </ul>
     	</nav>
     </div>
     </header>
@@ -58,9 +49,7 @@
     				<p>— №1 —</p>
     				<p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
     			</div>
-    			<div class="information-item-image">
     				<img src="img/sedona-village.jpg" width="800" height="256" alt="Американский городок Седона">
-    			</div>
     			</li>
     			<li>
     				<ul class="lifehack-list clear-list">
@@ -79,9 +68,7 @@
     		</ul>
     	</li>
     			<li class="information-item">
-    				<div class="information-item-image">
     				<img src="img/devils-bridge.jpg" width="800" height="256" alt="Мост Дьявола - скала в Седоне">
-    			</div>
     			<div class="information-item-text">
     				<h3 class="landmark">Там есть мост дьявола</h3>
     				<p>— №2 —</p>
@@ -113,7 +100,6 @@
     	<section class="search">
     		<h2 class="search-title">Заинтересовались?</h2>
     		<p class="search-info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <div class="search-form">
     		<section class="calendar">
             <h3 class="visually-hidden">Поиск гостиниц</h3>
     		<button class="search-hostel" type="button">Поиск гостиницы в Седоне</button>
@@ -121,35 +107,28 @@
       	<div class="calendar-item wrapper-input">
         <label for="calendar-date-in">Дата заезда:</label>
         <input id="calendar-date-in" type="text" name="date" placeholder="24 апреля 2017"> 
+        <img class="calendar-icon" src="img/calendar.svg" alt="Выберите дату">
     </div>
       	<div class="calendar-item wrapper-input">
         <label for="calendar-date-out">Дата выезда:</label>
         <input id="calendar-date-out" type="text" name="time" placeholder="4 июля 2017">
+        <img class="calendar-icon" src="img/calendar.svg" alt="Выберите дату">
     </div>
     <div class="calendar-item">
-      <table class="calendar-age">
-        <tbody>
-            <tr>
-        <td class="table-adult">
+      <div class="calendar-age">
         <label class="calendar-adult" for="calendar-adult">Взрослые:</label>
-        <span class="wrapper-age">
-        <input id="calendar-adult" type="number" min="0" max="10" value="2">
+        <span class="wrapper-age adult-input">
+        <input id="calendar-adult" type="text"  value="2">
     </span>
-</td>
-    <td class="table-children">
         <label class="calendar-children" for="calendar-children">Дети:</label>
-        <span class="wrapper-age">
-        <input id="calendar-children" type="number" min="0" max="10" value="0">
+        <span class="wrapper-age children-input">
+        <input id="calendar-children" type="text" value="0">
     </span>
-</td>
-</tr>
-</tbody>
-      </table>
+</div>
   </div>
       <button class="button" type="submit">Найти</button>
     </form>
     		</section>
-            </div>
     	</section>
     	<section class="geo">
     		<h2 class="map visually-hidden">Карта</h2>
@@ -165,7 +144,7 @@
     			<a class="footer-hashtag" href="#visitSEDONA">#visitSEDONA</a>
             </p>
             <p>
-    			ТЕЛ:<a class="footer-phone" href="+7(495)666-01-66"> +7(495) 666-01-66</a>
+    			ТЕЛ:<a class="footer-phone" href="tel:+7(495)666-01-66"> +7(495) 666-01-66</a>
     		</p>
     	</section>
     	<section class="footer-social">
